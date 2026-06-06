@@ -2,109 +2,61 @@ import type { SiteConfig } from "@core/web/types"
 
 export const config: SiteConfig = {
   business: {
-  city: "Tracy",
-  theme: "ocean",
-  niche: "cleaning",
-  name: "Sparkle Clean Co.",
-  tagline: "Spotless Home. Zero Stress.",
-  phone: "(555) 789-0123",
-  phoneHref: "tel:+15557890123",
-  email: "hello@sparkleclean.com",
-  address: "Tracy, California",
-  serviceAreas: ["Tracy", "Stockton", "Manteca", "Lathrop", "Mountain House", "Ripon"],
-  license: "CA Business #789012",
-  since: "2012",
-  google_rating: "4.9",
-  review_count: "523",
-  emergency: false,
-  social: { google: "https://google.com", yelp: "https://yelp.com", facebook: "https://facebook.com" },
-},
+    name: "Superb Maids",
+    tagline: "Your Home Deserves To Shine.",
+    phone: "(702) 721-8858",
+    phoneHref: "tel:+17027218858",
+    email: "info@superbmaids.com",
+    address: "3230 E Flamingo Rd #310",
+    city: "Las Vegas",
+    serviceAreas: ["Las Vegas", "Henderson"],
+    license: "Licensed by State of Nevada, Licensed by City of Las Vegas",
+    since: "2014",
+    google_rating: "4.7",
+    review_count: "970",
+    emergency: false,
+    theme: "noir",
+    niche: "cleaning",
+  },
 
   services: [
-  { icon: "sparkles", title: "Deep Cleaning", desc: "One-time top-to-bottom clean. Perfect for move-in/out, post-construction, or a seasonal fresh start. We leave no corner untouched.", urgent: false },
-  { icon: "calendar", title: "Weekly / Bi-Weekly", desc: "Recurring cleaning on your schedule. Same trusted cleaner every visit. Cancel anytime, no contracts.", urgent: false },
-  { icon: "truck", title: "Move In / Move Out", desc: "Professional clean for your old place or new home. Deposit-back guaranteed or we re-clean free.", urgent: false },
-  { icon: "building", title: "Commercial Cleaning", desc: "Offices, retail spaces, medical facilities. Nightly, weekly, or custom schedule. Bonded and insured.", urgent: false },
-  { icon: "home", title: "Post-Construction", desc: "Dust, debris, paint overspray — we handle it all. Move-in ready within 24 hours of construction.", urgent: false },
-  { icon: "key", title: "Airbnb Turnover", desc: "Between-guest cleaning that earns 5-star reviews. Quick turnaround. Fresh linens. Restock supplies.", urgent: false },
-],
+    { icon: "home", title: "House Cleaning Service", desc: "Experience a truly deep clean that restores your home to a like-new condition.", urgent: false },
+    { icon: "sparkles", title: "Deep Cleaning", desc: "Our comprehensive deep cleaning process targets every nook and cranny for an immaculate finish.", urgent: false },
+    { icon: "briefcase", title: "Office Cleaning", desc: "Maintain a pristine and productive work environment with our professional office cleaning solutions.", urgent: false },
+    { icon: "hammer", title: "Move-In/Out Cleaning", desc: "Ensure a spotless transition with our thorough cleaning services for moving in or out.", urgent: false },
+    { icon: "star", title: "Recurring Cleaning", desc: "Enjoy consistent cleanliness with our customizable weekly, bi-weekly, or monthly cleaning schedules.", urgent: false },
+    { icon: "shield-check", title: "Eco-Friendly Cleaning", desc: "We use environmentally safe products to protect your family, pets, and the planet.", urgent: false }
+  ],
 
   testimonials: [
-  { name: "Michelle B.", location: "Tracy, CA", stars: 5, text: "My house has never been this clean. The team arrived on time, worked methodically, and even cleaned spots I didn't ask for. Subscribing immediately." },
-  { name: "David S.", location: "Stockton, CA", stars: 5, text: "Used them for move-out cleaning. Landlord returned the full deposit with a compliment about the condition. Worth every dollar." },
-  { name: "Airbnb Host A.", location: "Manteca, CA", stars: 5, text: "They turn my unit over in 2 hours no matter the condition. Guests consistently give 5 stars for cleanliness. Best business decision I made." },
-],
+    { name: "Sarah L.", location: "Las Vegas", stars: 5, text: "Superb Maids truly lives up to their name! I hired them for a deep clean before a family gathering, and they transformed my home. The team spent over three hours, meticulously cleaning every surface. My kitchen has never looked so good, and the bathrooms sparkle. Worth every penny for the peace of mind!" },
+    { name: "Mark T.", location: "Henderson", stars: 5, text: "I've been using Superb Maids for recurring bi-weekly cleaning for the past six months, and I couldn't be happier. They are consistently punctual, professional, and thorough. I love coming home to a fresh, clean house without having to lift a finger. Their flat-rate pricing is also a huge plus – no surprises!" },
+    { name: "Jessica R.", location: "Las Vegas", stars: 5, text: "Moving is stressful enough, but Superb Maids made the move-out cleaning absolutely seamless. They were incredibly detailed, ensuring the apartment was spotless for the final inspection. The landlord was impressed, and I got my full deposit back. Highly recommend their services for anyone moving!" }
+  ],
 
   trustBadges: [
-  "Background-Checked Staff", "Fully Insured", "Eco-Friendly Products",
-  "Satisfaction Guarantee", "No Contracts", "5-Star Average"
-],
+    "Licensed & Insured", "27,000+ Homes Cleaned", "Top-Rated Las Vegas", "Worker's Comp Insured", "Background-Checked Staff", "Satisfaction Guaranteed"
+  ],
 
   stats: [
-  {
-    "value": 4.9,
-    "label": "Google Rating",
-    "suffix": "★",
-    "decimals": 1
-  },
-  {
-    "value": 2615,
-    "label": "Jobs Done",
-    "suffix": "+",
-    "decimals": 0
-  },
-  {
-    "value": 14,
-    "label": "Yrs Experience",
-    "suffix": "+",
-    "decimals": 0
-  }
-],
+    { value: 4.7, label: "Google Rating", suffix: "★", decimals: 1 },
+    { value: 27000, label: "Homes Cleaned", suffix: "+", decimals: 0 },
+    { value: 10, label: "Yrs Experience", suffix: "+", decimals: 0 }
+  ],
 
   reasons: [
-  {
-    "icon": "clock",
-    "title": "Fast Response",
-    "desc": "Same-day service when you need it. We don't keep customers waiting."
-  },
-  {
-    "icon": "dollar-sign",
-    "title": "Upfront Pricing",
-    "desc": "Quote before work starts. The number we say is the number you pay."
-  },
-  {
-    "icon": "award",
-    "title": "Certified Professionals",
-    "desc": "Licensed, insured, and trained. Real expertise on every job."
-  },
-  {
-    "icon": "thumbs-up",
-    "title": "Satisfaction Guarantee",
-    "desc": "100% happy or we come back and make it right. No questions asked."
-  },
-  {
-    "icon": "phone",
-    "title": "AI Reception 24/7",
-    "desc": "AI books cleanings, handles reschedules, and collects post-service reviews via call, text, or WhatsApp. Always on, never misses a lead."
-  },
-  {
-    "icon": "truck",
-    "title": "Fully Equipped",
-    "desc": "Trucks stocked with everything needed. First-visit completion rate above 90%."
-  }
-],
+    { icon: "award", title: "Award-Winning Service", desc: "Recognized as the best house cleaning service in Las Vegas by the Review Journal and SBA Nevada." },
+    { icon: "shield-check", title: "Vetted Professionals", desc: "Our team is rigorously screened, background-checked, and professionally trained for your peace of mind." },
+    { icon: "dollar-sign", title: "Upfront Flat Rates", desc: "Enjoy honest, transparent pricing with no hidden fees. What you see is what you pay." },
+    { icon: "thumbs-up", title: "Satisfaction Guarantee", desc: "If anything isn’t right, we'll fix it free of charge, no questions asked." },
+    { icon: "clock", title: "Thorough & Detailed", desc: "We focus on thoroughness, not speed, ensuring every clean is a deep clean." },
+    { icon: "home", title: "Insured & Licensed", desc: "Fully licensed by the State of Nevada and City of Las Vegas, with $2,000,000 liability insurance." }
+  ],
 
-  formServiceOptions: [
-  "Deep Cleaning",
-  "Weekly / Bi-Weekly",
-  "Move In / Move Out",
-  "Commercial Cleaning",
-  "Post-Construction",
-  "Airbnb Turnover"
-],
+  formServiceOptions: ["House Cleaning Service", "Deep Cleaning", "Office Cleaning", "Move-In/Out Cleaning", "Recurring Cleaning", "Eco-Friendly Cleaning"]
 }
 
-// Backward compat re-exports
+// Backward-compat re-exports
 export const BUSINESS = config.business
 export const SERVICES = config.services!
 export const TESTIMONIALS = config.testimonials!
